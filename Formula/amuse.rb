@@ -5,21 +5,21 @@
 class Amuse < Formula
   desc "amuse controls Apple Music (Music.app) from the terminal on macOS, via AppleScript."
   homepage "https://github.com/o-ga09/amuse"
-  version "0.0.1"
+  version "0.0.2"
   license "MIT"
   depends_on :macos
 
   if Hardware::CPU.intel?
-    url "https://github.com/o-ga09/amuse/releases/download/v0.0.1/amuse_v0.0.1_darwin_amd64.tar.gz"
-    sha256 "5b09082471a2b8e72a1604dbc4c916fbf53bb4ea29d0858f8939dea8b363f725"
+    url "https://github.com/o-ga09/amuse/releases/download/v0.0.2/amuse_v0.0.2_darwin_amd64.tar.gz"
+    sha256 "5cc4f99a8fe5e451e405a601d43de31e2e18e7bef234d7e18f1cd471d8c25b63"
 
     define_method(:install) do
       bin.install "amuse"
     end
   end
   if Hardware::CPU.arm?
-    url "https://github.com/o-ga09/amuse/releases/download/v0.0.1/amuse_v0.0.1_darwin_arm64.tar.gz"
-    sha256 "2b4c2c60e98a7a64bf595c12227b2a1854768ff41eafb2ef0085d4ec55903416"
+    url "https://github.com/o-ga09/amuse/releases/download/v0.0.2/amuse_v0.0.2_darwin_arm64.tar.gz"
+    sha256 "4dc5142b488eddb84bca13aa8e02548a292ff1e9daa66aa3a6cb6a8030ac5fdf"
 
     define_method(:install) do
       bin.install "amuse"
